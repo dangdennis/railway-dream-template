@@ -1,6 +1,6 @@
 ---
-title: Dream Starter
-description: A simple OCaml Dream starter app
+title: Dream
+description: An OCaml Dream app
 tags:
   - dream
   - ocaml
@@ -8,7 +8,7 @@ tags:
 
 # Dream Starter Example
 
-This is a simple, bare-bones [Dream](https://aantron.github.io/dream/) starter app. 
+This is a simple, bare-bones [Dream](https://aantron.github.io/dream/) app. 
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/mxESzS?referralCode=mT7-6r)
 
