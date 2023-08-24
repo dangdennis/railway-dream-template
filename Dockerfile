@@ -31,7 +31,4 @@ COPY --from=build /home/opam/_build/default/bin/main.exe /bin/server
 # Make sure the server is executable
 RUN chmod +x /bin/server
 
-# Expose the port your app runs on
-EXPOSE 8080
-
 ENTRYPOINT ["/bin/server"]
