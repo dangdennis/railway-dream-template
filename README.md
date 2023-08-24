@@ -6,16 +6,15 @@ tags:
   - ocaml
 ---
 
-# Dream Starter Example
+## Overview
 
-This is a simple, bare-bones [Dream](https://aantron.github.io/dream/) app. 
+This is a simple, bare-bones [Dream](https://aantron.github.io/dream/) app that
+serves an HTML page.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/mxESzS?referralCode=mT7-6r)
-
-## ✨ Features
-
-- OCaml
-- Dream
+Dream is a tidy web framework written in OCaml. It offers a great starting point
+for anyone interested in writing OCaml for their next web application. With a
+great type system and feature-full set of APIs, you'll have a great time trying
+out Dream.
 
 ## 💁‍♀️ How to use
 
@@ -28,5 +27,5 @@ This is a simple, bare-bones [Dream](https://aantron.github.io/dream/) app.
 
 ## 📝 Notes
 
-Visit [Dream](https://aantron.github.io/dream/) for api docs.
-This app uses the [Dune](https://dune.build/) build system.
+Visit [Dream](https://aantron.github.io/dream/) for api docs. This app uses the
+[Dune](https://dune.build/) build system.
