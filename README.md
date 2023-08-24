@@ -10,7 +10,7 @@ tags:
 
 This is a simple, bare-bones [Dream](https://aantron.github.io/dream/) starter app. 
 
-[![Deploy on Railway](https://railway.app/button.svg)](#)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/mxESzS?referralCode=mT7-6r)
 
 ## ✨ Features
 
