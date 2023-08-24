@@ -1,0 +1,5 @@
+*
+!bin/
+!lib/
+!dune-project
+!app.opam
