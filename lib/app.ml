@@ -3,7 +3,11 @@ let greet who =
   let open HTML in
   html []
     [
-      head [] [ script [ src "https://cdn.tailwindcss.com" ] "" ];
+      head []
+        [
+          script [ src "https://cdn.tailwindcss.com" ] "";
+          script [ src "https://unpkg.com/htmx.org@1.9.9" ] "";
+        ];
       body
         [ class_ "bg-black p-2" ]
         [
