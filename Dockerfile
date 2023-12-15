@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM ocaml/opam:alpine-ocaml-5.0 as build
+FROM ocaml/opam:alpine-ocaml-5.1 as build
 
 # Install system dependencies
 RUN sudo apk add --update libev-dev openssl-dev
