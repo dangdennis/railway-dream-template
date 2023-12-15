@@ -1,7 +1,21 @@
 let greet who =
   let open Dream_html in
   let open HTML in
-  p [ id "greet-%s" who ] [ txt "Hello, %s!" who ]
+  html []
+    [
+      head [] [ script [ src "https://cdn.tailwindcss.com" ] "" ];
+      body
+        [ class_ "bg-black p-2" ]
+        [
+          div
+            [ string_attr "hx-get" "/hi" ]
+            [
+              p
+                [ id "greet-%s" who; class_ "text-white" ]
+                [ txt "Hello, %s!" who ];
+            ];
+        ];
+    ]
 
 let get_port () =
   match Sys.getenv_opt "PORT" with
@@ -19,4 +33,7 @@ let run () =
   Dream.run ~interface:"0.0.0.0" ~port:(get_port ())
   @@ Dream.logger
   @@ Dream.router
-       [ Dream.get "/" (fun _ -> Dream_html.respond (greet "World")) ]
+       [
+         Dream.get "/" (fun _ ->
+             Dream.html (greet "World" |> Dream_html.to_string));
+       ]
