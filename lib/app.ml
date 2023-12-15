@@ -1,10 +1,7 @@
 let greet who =
-  let open Tyxml.Html in
-  html
-    (head (title (txt "Greeting")) [])
-    (body [ h1 [ txt "Good morning, "; txt who; txt "!" ] ])
-
-let html_to_string html = Format.asprintf "%a" (Tyxml.Html.pp ()) html
+  let open Dream_html in
+  let open HTML in
+  p [ id "greet-%s" who ] [ txt "Hello, %s!" who ]
 
 let get_port () =
   match Sys.getenv_opt "PORT" with
@@ -22,4 +19,4 @@ let run () =
   Dream.run ~interface:"0.0.0.0" ~port:(get_port ())
   @@ Dream.logger
   @@ Dream.router
-       [ Dream.get "/" (fun _ -> Dream.html (html_to_string (greet "Railway"))) ]
+       [ Dream.get "/" (fun _ -> Dream_html.respond (greet "World")) ]
