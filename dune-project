@@ -19,7 +19,12 @@
  (name app)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml dune dream dream-html)
+ (depends
+  ocaml
+  dune
+  dream
+  (dream-html
+   (= 2.0.0)))
  (tags
   (topics "to describe" your project)))
 
