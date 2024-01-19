@@ -19,7 +19,7 @@
  (name app)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml dune dream tyxml)
+ (depends ocaml dune dream dream-html)
  (tags
   (topics "to describe" your project)))
 
