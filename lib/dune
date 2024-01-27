@@ -1,3 +1,5 @@
 (library
  (name app)
  (libraries dream dream-html))
+
+(include_subdirs qualified)
