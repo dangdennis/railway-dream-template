@@ -1,8 +1,8 @@
 start:
-	dune exec bin/main.exe
+	dune exec app
 
 dev:
-	dune exec bin/main.exe --watch
+	dune exec app --watch
 
 install:
 	opam install . --deps-only

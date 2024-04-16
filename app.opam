@@ -11,7 +11,7 @@ doc: "https://url/to/documentation"
 bug-reports: "https://github.com/username/reponame/issues"
 depends: [
   "ocaml"
-  "dune" {>= "3.10"}
+  "dune" {>= "3.13"}
   "dream"
   "dream-html" {= "2.0.0"}
   "odoc" {with-doc}

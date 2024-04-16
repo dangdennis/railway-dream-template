@@ -22,7 +22,7 @@ out Dream.
 - Connect to your Railway project with `railway link`
 - Install OCaml `https://ocaml.org/install`
 - Install project dependencies `opam install . --deps-only`
-- Run Dream `dune exec bin/main.exe`
+- Run Dream `dune exec app`
 - A Makefile is provided for common commands, e.g. `make dev`
 
 ## 📝 Notes

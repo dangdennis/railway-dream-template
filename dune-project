@@ -24,7 +24,7 @@
   dune
   dream
   (dream-html
-   (= 2.0.0)))
+   (>= 2.0.0)))
  (tags
   (topics "to describe" your project)))
 
